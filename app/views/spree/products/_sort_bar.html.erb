@@ -13,5 +13,5 @@ if not params.keys.detect { |k| k != 'controller' and k != 'action' }.nil? and p
 		:order => params[:order] || :desc
 	})))
 %>
-<div id="product-list-sort"><%= t(:sort_by) %> <%= select_tag("product_sort_by", options) %></div>
+<div id="product-list-sort"><%# t(:sort_by) %><%= select_tag("product_sort_by", options) %></div>
 <% end %>
